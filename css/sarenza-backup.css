@@ -1,0 +1,243 @@
+/*! CSS Used from: Embedded */
+#MainFooter .advantages10reasons{margin:0 0 48px;padding:0;display:flex;justify-content:flex-start;align-items:flex-start;}
+#MainFooter .advantages10reasons>li{margin:0;list-style:none;width:25%;display:flex;justify-content:center;align-content:center;text-align:center;font-family:robotoc, "Arial Narrow", sans-serif;font-size:14px;color:#000;line-height:18px;padding:0 15px;flex-flow:row wrap;font-weight:700;}
+#MainFooter .advantages10reasons>li.pictenza:before{content:'\e634';font-size:40px;line-height:25px;margin:0 0 20px;width:100%;}
+#MainFooter .advantages10reasons>li.pictenza:nth-child(2n):before{content:'\e634';}
+#MainFooter .advantages10reasons>li.pictenza.delivery:before{content:'\e602';}
+#MainFooter .advantages10reasons>li.pictenza.delivery48:before{content:'\e6be';}
+#MainFooter .advantages10reasons>li.pictenza.return100:before{content:'\e701';}
+#MainFooter .advantages10reasons>li.pictenza.billing:before{content:'\e685';}
+#MainFooter nav.footer-nav{background:#F2F2F2;display:flex;justify-content:space-between;padding:36px 40px;}
+#MainFooter nav.footer-nav .col.avis{display:none;}
+#MainFooter nav.footer-nav .col .title-nav{font-family:robotoc, "Arial Narrow", sans-serif;font-weight:600;font-size:14px;color:#000;padding:0 0 11px;text-align:left;position:relative;}
+#MainFooter nav.footer-nav .col .list{margin:0;}
+#MainFooter nav.footer-nav .col .list>li{font-family:roboto, Arial, sans-serif;font-size:14px;line-height:22px;list-style:none;text-align:left;}
+#MainFooter nav.footer-nav .col .list>li>a{color:#737373;}
+#MainFooter nav.footer-nav .col .list+.title-nav{margin-top:35px;}
+#MainFooter nav.footer-nav .col .list.social-media{background:0 0;display:flex;justify-content:space-between;}
+#MainFooter nav.footer-nav .col .list.social-media>li{display:inline-block;width:36px;overflow:hidden;}
+#MainFooter .partners{display:flex;justify-content:center;padding:25px 0;}
+#MainFooter .partners>ul{display:flex;justify-content:center;flex-flow:row wrap;padding:0;margin:0;width:100%;}
+#MainFooter .partners>ul>li{list-style:none;overflow:hidden;display:flex;}
+#MainFooter .partners>ul>li.delivery,#MainFooter .partners>ul>li.quality{padding-left:20px;margin-left:0;}
+#MainFooter .partners>ul>li.delivery:before,#MainFooter .partners>ul>li.quality:before{content:"";border-left:1px solid #D5D5D5;padding-left:10px;padding-right:10px;}
+#MainFooter .partners>ul:last-child:after{content:none;}
+#MainFooter .legal{padding:40px;display:flex;justify-content:center;border-top:2px solid #F2F2F2;}
+#MainFooter .legal .legal-navigation{border-radius:2px;border-left:0;border-right:0;width:90%;display:flex;justify-content:space-between;padding:5px 6% 0 0;margin:0;}
+#MainFooter .legal .legal-navigation>li{font-family:robotoc, "Arial Narrow", sans-serif;font-weight:700;list-style:none;text-align:left;flex-grow:2;}
+#MainFooter .legal .legal-navigation>li>a{color:#999;font-size:12px;text-transform:uppercase;}
+#MainFooter .country-selector{width:176px;position:relative;text-align:left;line-height:30px;}
+#MainFooter .country-selector::before{content:'';width:5px;height:5px;border:2px solid #1D1D1B;border-bottom:none;border-left:none;-webkit-transform:rotate(135deg);-moz-transform:rotate(135deg);-o-transform:rotate(135deg);-ms-transform:rotate(135deg);transform:rotate(135deg);position:absolute;display:block;top:16px;right:20px;transition:transform ease 250ms;}
+#MainFooter .country-selector .selected{cursor:pointer;padding:6px 13px;border:1px solid #D5D5D5;height:40px;width:176px;font-size:14px;font-weight:700;color:#1D1D1B;}
+#MainFooter .country-selector .selected:before{margin-right:16px;}
+#MainFooter .country-selector .list{position:absolute;right:0;bottom:100%;left:0;overflow:hidden;background:#FFF;border-bottom:0;}
+#MainFooter .country-selector .list>li>a{display:block;height:0;padding:0;transition:height ease 250ms;font-size:14px;font-weight:700;color:#1D1D1B;}
+@media screen and (orientation:landscape){
+#MainFooter nav.footer-nav{padding:72px 30px 72px 0;justify-content:space-around;}
+#MainFooter nav.footer-nav .col.avis{display:flex;width:325px;justify-content:center;}
+#MainFooter nav.footer-nav .col.avis .logo{display:flex;width:100%;align-content:center;justify-content:center;padding:0 30px 0 20px;}
+#MainFooter nav.footer-nav .col.avis .logo>img{align-self:center;max-width:186px;}
+#MainFooter nav.footer-nav .col{width:175px;}
+#MainFooter nav.footer-nav .col:nth-child(2){width:220px;}
+#MainFooter nav.footer-nav .col:nth-child(4){width:160px;}
+#MainFooter .legal{border-top:1px solid #F2F2F2;padding:30px 0;flex-flow:row nowrap;}
+#MainFooter .legal .legal-navigation{border:none;width:65%;}
+#MainFooter .legal .country-selector{width:176px;margin:0;}
+}
+@media screen and (min-width:975px){
+#MainFooter{margin:32px auto 0;width:1008px;}
+#MainFooter nav.footer-nav .col .list.social-media>li>a:hover{margin-left:-31px;}
+}
+/*! CSS Used from: https://cdn.sarenza.net/website/prod_b/assets/stylesheet/animation.default.min.css?v=20191126175344 */
+.flags:before{content:"";}
+.facebook,.instagram,.twitter{width:57px;height:24px;}
+.facebook{background:url(https://cdn.sarenza.net/website/prod_b/assets/image/sprite/new-socials.png?v=20191128) no-repeat;}
+.instagram{background:url(https://cdn.sarenza.net/website/prod_b/assets/image/sprite/new-socials.png?v=20191128) 0 -25px no-repeat;}
+.twitter{background:url(https://cdn.sarenza.net/website/prod_b/assets/image/sprite/new-socials.png?v=20191128) -58px -25px no-repeat;}
+.flags-be:before,.flags-ch:before,.flags-de:before,.flags-dk:before,.flags-es:before,.flags-fr:before,.flags-it:before,.flags-lu:before,.flags-nl:before,.flags-se:before,.flags-uk:before{width:25px;height:16px;}
+@media (-webkit-min-device-pixel-ratio:1.5){
+.facebook,.instagram,.twitter{background-image:url(https://cdn.sarenza.net/website/prod_b/assets/image/sprite/new-socials@2x.png?v=20191128);background-size:115px 49px;}
+}
+.flags:before{background:url(https://cdn.sarenza.net/website/prod_b/assets/image/sprite/flags.png?v=20191128) no-repeat;display:inline-block;margin-right:5px;vertical-align:-3px;}
+.flags-be:before{background-position:-52px -17px;}
+.flags-ch:before{background-position:0 -17px;}
+.flags-de:before{background-position:-26px -17px;}
+.flags-dk:before{background-position:0 -34px;}
+.flags-es:before{background-position:-26px -34px;}
+.flags-eu:before{background-position:-52px 0;width:25px;height:16px;}
+.flags-fr:before{background-position:0 0;}
+.flags-it:before{background-position:0 -51px;}
+.flags-lu:before{background-position:-26px -51px;}
+.flags-nl:before{background-position:-52px -51px;}
+.flags-se:before{background-position:-78px 0;}
+.flags-uk:before{background-position:-78px -17px;}
+@media (-webkit-min-device-pixel-ratio:1.5){
+.flags:before{background-image:url(https://cdn.sarenza.net/website/prod_b/assets/image/sprite/flags@2x.png?v=20191128);background-size:103px 67px;}
+}
+.partners-de-adyen,.partners-de-dhl,.partners-de-dpd,.partners-de-mastercard,.partners-de-paypal,.partners-de-trusted-shops,.partners-de-visa{width:47px;height:30px;}
+.partners-de-adyen{background:url(https://cdn.sarenza.net/website/prod_b/assets/image/sprite/de.png?v=20191128) no-repeat;}
+.partners-de-dhl{background:url(https://cdn.sarenza.net/website/prod_b/assets/image/sprite/de.png?v=20191128) -48px 0 no-repeat;}
+.partners-de-dpd{background:url(https://cdn.sarenza.net/website/prod_b/assets/image/sprite/de.png?v=20191128) 0 -31px no-repeat;}
+.partners-de-mastercard{background:url(https://cdn.sarenza.net/website/prod_b/assets/image/sprite/de.png?v=20191128) 0 -62px no-repeat;}
+.partners-de-paypal{background:url(https://cdn.sarenza.net/website/prod_b/assets/image/sprite/de.png?v=20191128) -48px -62px no-repeat;}
+.partners-de-trusted-shops{background:url(https://cdn.sarenza.net/website/prod_b/assets/image/sprite/de.png?v=20191128) -96px 0 no-repeat;}
+.partners-de-visa{background:url(https://cdn.sarenza.net/website/prod_b/assets/image/sprite/de.png?v=20191128) -96px -62px no-repeat;}
+@media (-webkit-min-device-pixel-ratio:1.5){
+.partners-de-adyen,.partners-de-dhl,.partners-de-dpd,.partners-de-mastercard,.partners-de-paypal,.partners-de-trusted-shops,.partners-de-visa{background-image:url(https://cdn.sarenza.net/website/prod_b/assets/image/sprite/de@2x.png?v=20191128);background-size:143px 123px;}
+}
+.pictenza:after,.pictenza:before{display:inline-block;margin:0 .5em 0 0;vertical-align:middle;font:400 1em pictenza;-webkit-font-smoothing:antialiased;}
+.pictenza:after{margin:0 0 0 .5em;}
+.pictenza-search:before{content:"\e660";}
+.pictenza-account:before{content:"\e640";}
+.pictenza-favorites:before{content:"\e643";}
+.pictenza-cookie:before{content:"\e6b7";}
+.pictenza-basket:before{content:"\e641";}
+/*! CSS Used from: https://cdn.sarenza.net/website/prod_b/assets/stylesheet/account.default.min.css?v=20191126175344 */
+*{-webkit-tap-highlight-color:transparent;}
+.button,.cookie-set,.remote-popin{cursor:pointer;}
+*{box-sizing:border-box;}
+body{text-align:center;}
+.narrow,img{max-width:100%;}
+.button,.button:visited{color:#fff;}
+a:hover,p>a:hover{text-decoration:underline;}
+*{font-size:1em;}
+body,html{margin:0;padding:0;color:#1d1d1b;}
+body{font:400 14px/18px roboto,Arial,sans-serif;}
+.bordered,.button{text-align:left;}
+p>a{font-weight:700;}
+img{height:auto;}
+button,input{border-radius:0;-webkit-appearance:none;font-family:roboto,Arial,sans-serif;text-decoration:none;}
+p{font-family:robotoc,Arial Narrow,sans-serif;}
+p{font-size:14px;line-height:1.5em;color:#999;}
+p>a{color:#1d1d1b;}
+.sprited{display:inline-block;text-indent:-9999em;}
+small.mention{display:block;margin:1em 0;font-size:12px;line-height:1.25em;color:#999;}
+#registration-privacy-policy h2, #registration-privacy-policy h3{font-family:futur,Arial Narrow,sans-serif;font-weight:700;}
+.title-level1,.title-level3{margin:0;text-transform:uppercase;}
+.title-level1{font:700 48px/48px futur,Arial Narrow,sans-serif;}
+.title-level3{font:700 22px/24px futur,Arial Narrow,sans-serif;}
+.title-separator{background-color:#f2f2f2;padding:15px;font:700 24px/18px robotoc,Arial Narrow,sans-serif;margin-top:30px;}
+a,a:visited{color:#1d1d1b;}
+.button:hover,a,a:visited{text-decoration:none;}
+button{border:0;background:0 0;}
+.button{z-index:0;position:relative;vertical-align:middle;font:700 12px/14px robotoc,Arial Narrow,sans-serif;text-transform:uppercase;padding:0 64px 0 32px;background:#1d1d1b;min-width:96px;height:48px;overflow:hidden;outline:0;transition:background .25s ease,color .25s ease,border .25s ease;display:inline-flex;align-items:center;}
+.button:hover{background:#000;}
+.button:after{position:absolute;right:32px;top:14px;margin-top:0;margin-left:1.5em;content:"\e372";font-family:pictenza;font-size:1em;font-style:normal;speak:none;font-weight:700;-webkit-font-smoothing:antialiased;}
+.button:focus:before{width:30em;height:30em;margin:-15em 0 0 -15em;}
+.button.serious{background-color:#ff2157;border-color:#ff2157;}
+.button.serious:hover{background:#e71051;}
+.bordered{position:relative;padding:16px 30px;}
+.bordered{margin:16px auto;z-index:1;border:2px solid #d5d5d5;border-radius:2px;}
+.bordered .button{margin:24px 0 16px;}
+.narrow{display:inline-block;width:560px;}
+.field{position:relative;margin:16px 0;}
+.field .label{display:block;margin-bottom:.3em;font:400 12px robotoc,Arial Narrow,sans-serif;text-transform:uppercase;}
+span.switcher{font-family:robotoc,Arial Narrow,sans-serif;font-weight:400;cursor:pointer;}
+.field .label>small{color:#d5d5d5;}
+.field input[type=email],.field input[type=password],.field input[type=tel],.field input[type=text]{display:block;margin-bottom:5px;padding:3px 15px;height:48px;width:100%;border:1px solid #d5d5d5;outline:0;transition:border .25s ease-in-out;}
+.field input[type=email]:focus,.field input[type=password]:focus,.field input[type=tel]:focus,.field input[type=text]:focus{border-color:#1d1d1b;}
+span.switcher{position:relative;float:right;margin:-52px 1px 0 -100%;padding:0 10px;background:#fff;text-transform:uppercase;line-height:46px;color:#999;}
+input.switcher:focus+span.switcher{color:#1d1d1b;}
+.w25,.w33,.w66{box-sizing:border-box;}
+.w33{width:33%;}
+.w66{width:66%;}
+.w25{width:25%;}
+.user-nav>li>a:hover{text-decoration:none;}
+body:after{display:none;content:"medium";}
+#MainNav-RD .main-list,#MainNav-RD .main-list>li,.account-layer,.country-selector .list,.country-selector .list>li,.footer-nav .list,.footer-nav .list>li,.user-nav,.user-nav>li{display:block;list-style-type:none;padding:0;margin:0;}
+.container{margin:auto;min-width:768px;max-width:1008px;width:100%;}
+.search-form{clear:both;position:relative;padding:0 16px;}
+.search-form input[name=search]{outline:0;position:relative;z-index:1;padding:8px 16px 8px 48px;width:100%;border:1px solid #d5d5d5;height:48px;font-size:12px;line-height:48px;}
+.search-form button{z-index:1;padding:0;margin:0;color:#1d1d1b;cursor:pointer;border:none;position:absolute;top:5px;left:24px;width:33px;height:33px;font-size:26px;line-height:26px;background:#fff;}
+#MainHeader-RD{position:relative;min-width:768px;}
+#MainHeader-RD .logo{position:absolute;width:142px;height:20px;background:url(https://cdn.sarenza.net/website/prod_b/assets/image/sarenza-default-2018.png?v=20191128) no-repeat;background-size:cover;left:50%;top:22px;transform:translateX(-50%);}
+#MainHeader-RD .search-form{margin:0 16px 16px;}
+#MainHeader-RD .search-form input[name=search]{padding-left:67px;background:#f2f2f2;border:none;border-bottom:2px solid #1d1d1b;border-right:1px solid #f2f2f2;border-left:1px solid #f2f2f2;border-top:1px solid #f2f2f2;height:54px;}
+#MainHeader-RD .search-form input[name=search]:focus{background:#fff;border-right-color:#d5d5d5;border-left-color:#d5d5d5;border-top-color:#d5d5d5;}
+#MainHeader-RD .search-form input[name=search]:focus:-ms-input-placeholder,#MainHeader-RD .search-form input[name=search]:focus::-ms-input-placeholder{color:transparent;}
+#MainHeader-RD .search-form input[name=search]:focus::placeholder{color:transparent;}
+#MainHeader-RD .search-form input[name=search]:focus~button{background:#fff;}
+#MainHeader-RD .search-form button{left:32px;border-radius:50%;background:#f2f2f2;}
+#MainHeader-RD .user-nav>li>a{font:400 11px robotoc,Arial Narrow,sans-serif;position:relative;}
+#MainHeader-RD .user-nav>li[data-partner]{line-height:1em;width:auto;}
+.user-nav{position:absolute;top:9px;right:16px;}
+.user-nav>li{position:relative;}
+.user-nav>li{float:left;width:80px;}
+.user-nav>li[data-partner]{line-height:1em;width:auto;}
+.user-nav>li>a{text-transform:uppercase;font:400 10px robotoc,Arial Narrow,sans-serif;}
+.user-nav>li[class]>a{position:relative;display:block;padding:1px 0;}
+.user-nav>li[class]>a:before{display:block;height:24px;font-size:24px;line-height:24px;margin:0 0 4px;}
+#MainNav-RD{z-index:15;max-width:320px;text-align:left;bottom:0;}
+.account-layer,.user-nav .cookies{display:none;}
+.main-list{position:relative;}
+#MainNav-RD{position:fixed;top:0;left:0;width:100%;overflow:hidden;background:#fff;transform:translate3d(-320px,0,0) scaleX(1);transition:transform .25s ease-in;}
+#MainNav-RD a{display:block;padding:4px 32px;font:700 14px/48px robotoc,Arial Narrow,sans-serif;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;border-bottom:1px solid #d5d5d5;-webkit-tap-highlight-color:rgba(0,0,0,.125);}
+#MainNav-RD .menu-group-list{display:flex;justify-content:space-around;margin:0;padding:0;flex-wrap:wrap;background:#fff;}
+#MainNav-RD .menu-group-list+.main-list .menu-group{background:#f2f2f2;}
+#MainNav-RD .menu-group-list li.group-tab{list-style:none;padding:0 10px;min-width:105px;text-align:center;border-bottom:1px solid #d5d5d5;display:flex;justify-content:center;align-items:center;text-transform:uppercase;width:25%;height:64px;text-overflow:ellipsis;position:relative;background:#fff;}
+#MainNav-RD .menu-group-list li.group-tab>a{font-family:robotoc,Arial Narrow,sans-serif;font-size:16px;padding:0;border:none;line-height:36pt;color:#000;}
+#MainNav-RD .menu-group-list li.group-tab+li{border-left:1px solid #d5d5d5;}
+#MainNav-RD .main-list{margin:0;padding:0;}
+#MainNav-RD .main-list li{list-style:none;}
+#MainNav-RD .tab{position:relative;}
+#MainNav-RD .tab{color:#000;font:400 14px/39px robotoc,Arial Narrow,sans-serif;}
+#MainNav-RD a.promo{color:#ff2157;}
+#MainNav-RD .inner-scroll{position:absolute;top:52px;right:2px;bottom:0;left:0;overflow:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;}
+#MainNav-RD .tab{cursor:pointer;}
+@media screen and (min-width:975px){
+body:after{content:"wide";}
+.no-touch #InnerMainHeader{margin:0 auto;width:100%;position:relative;max-width:1200px;}
+.no-touch .search-form{position:absolute;top:32px;left:24px;padding:0;width:300px;background:0 0;border:0;}
+.no-touch .search-form button{left:8px;}
+.no-touch #MainHeader-RD{z-index:17;position:relative;width:100%;min-height:98px;margin:32px 0 16px;}
+.no-touch #MainHeader-RD .logo{width:231px;height:24px;top:15px;z-index:20;background-image:url(https://cdn.sarenza.net/website/prod_b/assets/image/sarenza-default-baseline-2019.png?v=20191128);}
+.no-touch #MainHeader-RD:before{content:"";display:block;background:#fff;border-top:1px solid #d5d5d5;border-bottom:1px solid #d5d5d5;height:55px;position:absolute;left:0;right:0;bottom:0;z-index:0;box-sizing:border-box;}
+.no-touch #MainHeader-RD .search-form{left:auto;right:0;top:64px;z-index:16;margin:0;}
+.no-touch #MainHeader-RD .search-form input[name=search]{border-top:none;}
+.no-touch #MainHeader-RD .search-form button{left:32px;top:8px;}
+.no-touch #MainHeader-RD .user-nav{top:14px;right:0;display:flex;justify-content:flex-end;padding:0 0 0 24px;}
+.no-touch #MainHeader-RD .user-nav>li{width:auto;}
+.no-touch #MainHeader-RD .user-nav>li+li{margin:0 0 0 32px;}
+.no-touch #MainHeader-RD .user-nav>li>a{display:flex;align-items:center;justify-content:flex-start;}
+.no-touch #MainHeader-RD .user-nav>li>a:before{display:inline-block;margin:0 8px 0 0;height:29px;}
+.no-touch #MainHeader-RD .user-nav>li>a:after{margin:0;max-width:8px;}
+.no-touch #MainHeader-RD .user-nav .account-layer{top:107%;left:-35px;padding:32px;}
+.no-touch #MainHeader-RD .user-nav .account-layer:before{background:hsla(0,0%,100%,0);transform:none;left:0;top:-11px;width:100%;height:25px;}
+.no-touch #MainHeader-RD .user-nav .account-layer:after{content:none;}
+.no-touch .user-nav{z-index:16;top:28px;}
+.no-touch .user-nav>li[class]>a{padding-bottom:16px;}
+.no-touch .user-nav>li[class]>a:before{margin:0 0 8px;}
+.no-touch .user-nav .account:active .account-layer,.no-touch .user-nav .account:hover .account-layer{display:block;}
+.no-touch .user-nav .account:active .account-layer:empty,.no-touch .user-nav .account:hover .account-layer:empty{display:none;}
+.no-touch .account-layer{z-index:15;position:absolute;top:100%;left:-30px;padding:16px 24px;width:270px;text-align:left;background:#fff;border:1px solid #d5d5d5;}
+.no-touch .account-layer:after,.no-touch .account-layer:before{content:"";display:block;position:absolute;top:-8px;left:60px;width:16px;height:16px;background:#d5d5d5;transform:rotate(45deg);}
+.no-touch .account-layer:after{top:-7px;background:#fff;}
+.no-touch #MainNav-RD .main-list>li:hover .tab:after{opacity:1;}
+.no-touch #MainNav-RD{clear:both;z-index:0;position:relative;padding:0;width:auto;max-width:100%;overflow:visible;background:0 0;border:0;transform:none;-webkit-transform:none;transition:none;margin:0 auto;}
+.no-touch #MainNav-RD:hover{z-index:15;}
+.no-touch #MainNav-RD a{padding:0 10px;font-size:14px;line-height:16px;background:0 0;border:0;}
+.no-touch #MainNav-RD .menu-group-list{display:flex;justify-content:flex-start;margin:0;height:64px;padding:0;background:#fff;border-bottom:1px solid #d5d5d5;}
+.no-touch #MainNav-RD .menu-group-list li.group-tab>a{font:700 16px robotoc,Arial Narrow,sans-serif;color:#000;}
+.no-touch #MainNav-RD .menu-group-list+.main-list .menu-group{background:0 0;}
+.no-touch #MainNav-RD .menu-group-list li.group-tab{width:auto;list-style:none;padding:0;display:flex;align-items:center;justify-content:center;height:auto;position:relative;z-index:1;background:0 0;border:none;}
+.no-touch #MainNav-RD .menu-group-list li.group-tab>a{padding:0;border:none;display:flex;justify-content:center;align-content:center;align-items:center;width:100%;height:100%;}
+.no-touch #MainNav-RD .menu-group-list li.group-tab>a:hover{text-decoration:none;color:#000;}
+.no-touch #MainNav-RD .menu-group-list li.group-tab+li:before{content:none;}
+.no-touch #MainNav-RD .tab:hover:before{content:"";}
+.no-touch #MainNav-RD .tab{padding:0 16px;display:inline-block;width:100%;text-align:center;overflow:visible;font-family:robotoc,Arial Narrow,sans-serif;font-size:14px;line-height:55px;border:none;position:relative;z-index:2;height:100%;}
+.no-touch #MainNav-RD .tab.promo{color:#ff2157;}
+.no-touch #MainNav-RD .tab:hover{text-decoration:none;}
+.no-touch #MainNav-RD .tab:hover:before{border-bottom:2px solid #1d1d1b;position:absolute;bottom:0;left:0;width:100%;animation-duration:.3s;animation-name:slide;}
+.no-touch #MainNav-RD .tab:hover.promo:before{border-bottom:2px solid #ff2157;}
+.no-touch #MainNav-RD .main-list{display:flex;width:auto;padding:0 0 0 12px;min-width:920px;height:54px;background:0 0;}
+.no-touch #MainNav-RD .inner-scroll{position:static;overflow:visible;}
+.container{padding:0;}
+}
+/*! CSS Used keyframes */
+@keyframes slide{0%{width:0;}to{width:100%;}}
+/*! CSS Used fontfaces */
+@font-face{font-family:robotoc;src:url(https://cdn.sarenza.net/website/prod_b/assets/font/roboto-condensed.woff?v=20191128) format("woff");font-weight:400;}
+@font-face{font-family:robotoc;src:url(https://cdn.sarenza.net/website/prod_b/assets/font/roboto-condensed-bold.woff?v=20191128) format("woff");font-weight:700;}
+@font-face{font-family:roboto;src:url(https://cdn.sarenza.net/website/prod_b/assets/font/roboto.woff?v=20191128) format("woff");font-weight:400;}
+@font-face{font-family:pictenza;src:url(https://cdn.sarenza.net/website/prod_b/assets/font/pictenza.woff?201806081606) format("woff");font-weight:400;font-style:normal;}
+@font-face{font-family:futur;src:url(https://cdn.sarenza.net/website/prod_b/assets/font/futur-condensed-bold.woff?v=20191128) format("woff");font-weight:400;}

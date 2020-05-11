@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Interactive RAW</title>
+  <script type="text/javascript" src="http://www.umfrage.mcm.uni-wuerzburg.de//tmp/assets/f1d604a/jquery-3.1.1.min.js" class="headScriptTag"></script>
+</head>
+
+<body>
+
+  <div id="json-content">
+    <div class="interactive-policy">
+
+      <h2 class="title-level1">Datenschutzerklärung</h2>
+      <h4>Erkunden Sie unsere <strong>interaktive Grafik</strong> und kontrollieren Sie die Verwendung Ihrer Daten.</h4>
+
+      <div class="privacy-table">
+        <div class="headings">
+          <div class="privacy-table__heading privacy-table__heading-1">Daten</div>
+          <div class="privacy-table__heading privacy-table__heading-2">Verwendung</div>
+          <div class="privacy-table__heading privacy-table__heading-3">Weitergabe</div>
+        </div>
+        <div class="privacy-table__row privacy-table__header">
+          <div class="cell cell--heading" data-html="true" title="Diese Daten <strong>können</strong> bei der Verwendung der Website anfallen. Für mehr Informationen bewegen Sie die Maus über die <strong>?</strong>-Icons." data-toggle="tooltip" data-placement="auto bottom">Daten
+          </div>
+          <div class="cell cell--usage">
+            <img class="info-icon" title="Bestimmte Daten benötigen wir etwa, um die Website zu betreiben oder bestimmte Funktionen anzubieten." data-toggle="tooltip" data-placement="auto bottom"
+              src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/info.png" alt="info">
+            <div class="cell__label">Bereitstellung</div>
+          </div>
+          <div class="cell cell--usage cell--interactive  cell-header--analytics">
+            <label class="switch">
+              <input id="toggle-analytics" type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+            <img class="info-icon" title="Wir untersuchen bestimmte Daten (etwa zum Surfverhalten), um unser Angebot oder unsere Website zu verbessern." data-toggle="tooltip" data-placement="auto bottom"
+              src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/info.png" alt="info">
+            <div class="cell__label">Analyse</div>
+          </div>
+          <div class="cell cell--usage cell--interactive  cell-header--marketing">
+            <label class="switch">
+              <input id="toggle-marketing" type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+            <img class="info-icon" title="Manche Daten nutzen wir für Direktmarketing (z.B. ber E-Mail) oder für personalisierte Werbung auf der Website." data-toggle="tooltip" data-placement="auto bottom"
+              src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/info.png" alt="info">
+            <div class="cell__label">Marketing</div>
+          </div>
+          <div class="cell cell--usage cell--interactive  cell-header--profiling">
+            <label class="switch">
+              <input id="toggle-profiling" type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+
+
+            <img class="info-icon" title="Beim Profiling analysieren Werbeunternehmen das Verhalten auf Websites und leiten allgemeine demographische Daten über Nutzergruppen ab." data-toggle="tooltip" data-placement="auto bottom"
+              src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/info.png" alt="info">
+
+            <div class="cell__label">Profiling</div>
+
+          </div>
+          <div class="cell cell--disclosure cell--interactive  cell-header--disclosure">
+            <label class="switch">
+              <input id="toggle-disclosure" type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+            <img class="info-icon" title="Wir benutzen externe Tools für Analyse und Werbung, manche davon nutzen anfallende Daten zu eigenen Zwecken." data-toggle="tooltip" data-placement="auto bottom"
+              src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/info.png" alt="info">
+            <div class="cell__label">Andere Unternehmen</div>
+          </div>
+          <div class="cell cell--disclosure">
+            <img class="info-icon" title="Für manche Funktionen (z.B. Bewertungn) sind Ihre Angaben öffentlich sichtbar." data-toggle="tooltip" data-placement="auto bottom"
+              src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/info.png" alt="info">
+            <div class="cell__label">Öffentlich sichtbar</div>
+          </div>
+        </div>
+        <!-- Identifikation -->
+        <div class="privacy-table__row-group">
+          <div class="privacy-table__row privacy-table__row--parent">
+            <div class="cell cell--data">
+              Identifikation
+              <img class="cell__toggle" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/plus.png" alt="plus">
+            </div>
+            <div class="cell cell--match cell--uses-service">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--match cell--uses-analytics">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--match cell cell--uses-marketing">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--match cell cell--uses-profiling">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--match cell cell--uses-disclosure">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--uses-publication">
+
+            </div>
+          </div>
+          <!-- Name -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              Name
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png" title="Ihren Namen geben Sie bei der Registrierung, bei Kontaktaufnahme, Gewinnspielen oder Newsletteranmeldung an."
+                data-toggle="tooltip" data-placement="auto left" alt="source">
+            </div>
+            <div class="cell cell--child cell--tracker" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Versand von Paketen. Rechnung. Ansprache in Mails, Newslettern und Kontaktaufnahme.
+
+                  <div><strong>Sarenza: </strong> für 5 Jahre nach Ende der Kundenbeziehung bzw. bei bestehen eines Accounts auf europäischen Servern<br></div>">
+              Sarenza
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child">
+            </div>
+          </div>
+          <!-- IP-Adresse (anonymisiert) -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              IP-Adresse (anonymisiert)
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png" title="Erfassung und Anonymisierung durch unsere Server oder über Cookies von Drittanbietern." data-toggle="tooltip"
+                data-placement="auto left" alt="source">
+
+            </div>
+            <div class="cell cell--child cell--tracker" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Auslieferung der Website
+
+                  <div><strong>Sarenza: </strong> 5 Jahre nach Ende der Kundenbeziehung auf europäischen Servern<br></div>">
+              Sarenza
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-analytics" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Zuordnung von Datenpunkten zu Demographie und Verhalten
+                <div><strong>Google: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>
+                  <div><strong>Sarenza: </strong> 5 Jahre nach Ende der Kundenbeziehung auf europäischen Servern<br></div>">
+              Sarenza, Google Analytics
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-marketing" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Personalisierte Werbung
+                <div><strong>Facebook: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child cell--uses-profiling">
+
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-disclosure" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Beide Unternehmen speichern Daten zur eigenen Verwendung
+                <div><strong>Google: </strong>n.a.<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>
+                  <div><strong>Facebook: </strong>n.a.<br>
+                    <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Google Analytics, Facebook
+            </div>
+            <div class="cell cell--child">
+            </div>
+          </div>
+          <!-- Cookies -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              Cookies
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png" title="Textdateien auf Ihrem Gerät speichern Einstellungen oder dienen der Identifikation für Werbung oder Analyse."
+                data-toggle="tooltip" data-placement="auto left" alt="source">
+
+            </div>
+            <div class="cell cell--child cell--tracker" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Auslieferung der Website. Speicherung von Einstellungen und Login-Status.
+
+                  <div><strong>Sarenza: </strong> für ein Jahr auf Ihrem Gerät<br></div>">
+              Sarenza
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-analytics" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Erfassung von Nutzererhalten (pseudonymisiert)
+                <div><strong>Google: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Google Analtics
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-marketing" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Personalisierte Werbung
+                <div><strong>Facebook: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-profiling" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Personalisierte Werbung durch Zuordnung zu Nutzerkategorien
+                <div><strong>Facebook: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-disclosure" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Beide Unternehmen speichern Daten zur eigenen Verwendung
+                <div><strong>Google: </strong>n.a.<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>
+                  <div><strong>Facebook: </strong>n.a.<br>
+                    <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Google Analytics, Facebook
+            </div>
+            <div class="cell cell--child">
+            </div>
+          </div>
+          <!-- Tracking-Pixel -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              Tracking-Pixel
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png" title="Alternative zu Cookies dient zur Identifikation." data-toggle="tooltip" data-placement="auto left" alt="source">
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child cell--uses-analytics">
+
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-marketing" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Personalisierte Werbung
+                <div><strong>Facebook: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-disclosure" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Facebook verarbeitet die Informationen auch für eigene Zwecke
+                <div><strong>Facebook: </strong>n.a.<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child">
+            </div>
+          </div>
+          <!-- Social Media Account -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              Social Media Account
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png" title="Facebook kann das Tracking-Pixel Ihrem Account zuordnen, wenn Sie dort angemeldet sind." data-toggle="tooltip"
+                data-placement="auto left" alt="source">
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-marketing" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Personalisierte Werbung
+                <div><strong>Facebook: </strong>n.a.<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-disclosure" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Facebook verarbeitet die Informationen auch für eigene Zwecke
+                <div><strong>Facebook: </strong>n.a.<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child">
+            </div>
+          </div>
+        </div>
+        <!-- Kontaktinformationen -->
+        <div class="privacy-table__row-group">
+          <div class="privacy-table__row privacy-table__row--parent">
+            <div class="cell cell--data">
+              Kontakt-informationen
+              <img class="cell__toggle" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/plus.png" alt="plus">
+            </div>
+            <div class="cell cell--match cell--uses-service">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--uses-analytics">
+
+            </div>
+            <div class="cell cell--match cell cell--uses-marketing">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--uses-profiling">
+
+            </div>
+            <div class="cell cell--uses-disclosure">
+
+            </div>
+            <div class="cell cell--uses-publication">
+
+            </div>
+          </div>
+          <!-- E-Mail -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              E-Mail
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png"
+                title="Ihre E-Mail-Adresse geben Sie bei der Registrierung, bei der Anmeldung für einen Newsletter, ein Gewinnspiel oder über das Kontaktformular an." data-toggle="tooltip" data-placement="auto left" alt="source">
+
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-service" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Nötig für Account und Kontaktaufnahme.
+
+                  <div><strong>Sarenza: </strong> für ein Jahr bzw. bei bestehen eines Accounts auf europäischen Servern<br></div>">
+              Sarenza
+            </div>
+            <div class="cell cell--child cell--uses-analytics">
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-marketing" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Informationen über personalisierte Angebote und Rabatte.
+
+                  <div><strong>Sarenza: </strong> für ein Jahr bzw. bei bestehen eines Accounts auf europäischen Servern<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Sarenza
+            </div>
+            <div class="cell cell--child cell--uses-profiling">
+            </div>
+            <div class="cell cell--child cell--uses-disclosure">
+            </div>
+            <div class="cell cell--child cell--uses-publication">
+            </div>
+          </div>
+          <!-- Telefon -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              Telefon
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png" title="Ihre Telefonnummer geben Sie bei der Registrierung an." data-toggle="tooltip" data-placement="auto left" alt="source">
+
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-service" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Kontaktaufnahme durch Paketboten bei Bedarf.
+
+                  <div><strong>Sarenza: </strong>für ein Jahr bzw. bei bestehen eines Accounts auf europäischen Servern<br></div>">
+              Sarenza
+            </div>
+            <div class="cell cell--child cell--uses-analytics">
+            </div>
+            <div class="cell cell--child cell--uses-marketing">
+            </div>
+            <div class="cell cell--child cell--uses-profiling">
+            </div>
+            <div class="cell cell--child cell--uses-disclosure">
+            </div>
+            <div class="cell cell--child cell--uses-publication">
+            </div>
+          </div>
+          <!-- Adresse -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              Adresse
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png" title="Ihre Adresse geben Sie bei der Registrierung an." data-toggle="tooltip" data-placement="auto left" alt="source">
+
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-service" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Versand von Paketen.
+
+                  <div><strong>Sarenza: </strong>für ein Jahr bzw. bei bestehen eines Accounts auf europäischen Servern<br></div>">
+              Sarenza
+            </div>
+            <div class="cell cell--child cell--uses-analytics">
+            </div>
+            <div class="cell cell--child cell--uses-marketing">
+            </div>
+            <div class="cell cell--child cell--uses-profiling">
+            </div>
+            <div class="cell cell--child cell--uses-disclosure">
+            </div>
+            <div class="cell cell--child cell--uses-publication">
+            </div>
+          </div>
+        </div>
+        <!-- Finanziell -->
+        <div class="privacy-table__row-group">
+          <div class="privacy-table__row privacy-table__row--parent">
+            <div class="cell cell--data">
+              Finanziell
+              <img class="cell__toggle" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/plus.png" alt="plus">
+            </div>
+            <div class="cell cell--match cell--uses-service">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--uses-analytics">
+
+            </div>
+            <div class="cell cell cell--uses-marketing">
+            </div>
+            <div class="cell cell--uses-profiling">
+            </div>
+            <div class="cell cell--uses-disclosure">
+            </div>
+            <div class="cell cell--uses-publication">
+
+            </div>
+          </div>
+          <!-- Zahlungsdaten -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              Zahlungsdaten
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png" title="Ihre Bankdaten geben Sie entweder direkt beim Kauf ein oder übermitteln Sie mit einem Zahlungsdienst (z.B. Klarna)."
+                data-toggle="tooltip" data-placement="auto left" alt="source">
+
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-service" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Nötig für die Verkaufsabwicklung.
+
+                  <div><strong>Sarenza: </strong>bis 10 Jahre nach Ende der Kundenbeziehung auf europäischen Servern<br></div>">
+              Sarenza
+            </div>
+            <div class="cell cell--child cell--uses-analytics">
+            </div>
+            <div class="cell cell--child cell--uses-marketing">
+            </div>
+            <div class="cell cell--child cell--uses-profiling">
+            </div>
+            <div class="cell cell--child cell--uses-disclosure">
+            </div>
+            <div class="cell cell--child cell--uses-publication">
+            </div>
+          </div>
+          <!-- Rechungsdaten -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              Rechnungs-<br>daten
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png" title="Rechnungsdaten entstehen beim Kauf." data-toggle="tooltip" data-placement="auto left" alt="source">
+
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-service" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Nötig für die Verkaufsabwicklung.
+
+                  <div><strong>Sarenza: </strong>bis 5 Jahre nach Ende der Kundenbeziehung auf europäischen Servern<br></div>">
+              Sarenza
+            </div>
+            <div class="cell cell--child cell--uses-analytics">
+            </div>
+            <div class="cell cell--child cell--uses-marketing">
+
+            </div>
+            <div class="cell cell--child cell--uses-profiling">
+            </div>
+            <div class="cell cell--child cell--uses-disclosure">
+            </div>
+            <div class="cell cell--child cell--uses-publication">
+            </div>
+          </div>
+        </div>
+        <!-- Demographische Daten -->
+        <div class="privacy-table__row-group">
+          <div class="privacy-table__row privacy-table__row--parent">
+            <div class="cell cell--data">
+              Demographische Daten
+              <img class="cell__toggle" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/plus.png" alt="plus">
+            </div>
+            <div class="cell  cell--match cell--uses-service">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--match cell--uses-analytics">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--match cell cell--uses-marketing">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--match cell cell--uses-profiling">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--match cell cell--uses-disclosure">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--uses-publication">
+
+            </div>
+          </div>
+          <!-- Region -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              Region
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png" title="Über die IP-Adresse kann Ihr ungefährer Standort bestimmt werden." data-toggle="tooltip" data-placement="auto left"
+                alt="source">
+
+            </div>
+            <div class="cell cell--tracker cell--child" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Daten werden standardmäßig vom Server erhoben.
+                <div><strong>Google: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>
+                  <div><strong>Sarenza: </strong> 5 Jahre nach Ende der Kundenbeziehung auf europäischen Servern<br></div>">
+              Sarenza
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-analytics" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Analyse unserer Zielgruppen zur Verbesserung der Produkte.
+                <div><strong>Google: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>
+                  <div><strong>Sarenza: </strong> 5 Jahre nach Ende der Kundenbeziehung auf europäischen Servern<br></div>">
+              Saranza, Google Analytics
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-marketing" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Personalisierte Werbung
+                <div><strong>Facebook: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-profiling" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Personalisierte Werbung durch Zuordnung zu Nutzerkategorien
+                <div><strong>Facebook: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-disclosure" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Beide Unternehmen speichern Daten zur eigenen Verwendung
+                <div><strong>Google: </strong>n.a.<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>
+                  <div><strong>Facebook: </strong>n.a.<br>
+                    <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Google Analytics, Facebook
+            </div>
+            <div class="cell cell--child">
+            </div>
+          </div>
+          <!-- Geräteinformationen -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              Geräte-<br>informationen
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png" title="Über Ihre Browser können wir Informationen wie Betriebssystem und Bildschirmauflösung erhalten." data-toggle="tooltip"
+                data-placement="auto left" alt="source">
+
+            </div>
+            <div class="cell cell--child">
+
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-analytics" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Analyse unserer Zielgruppen zur Verbesserung der Produkte.
+                <div><strong>Google: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>
+                  <div><strong>Sarenza: </strong> 5 Jahre nach Ende der Kundenbeziehung auf europäischen Servern<br></div>">
+              Sarenza, Google Analytics
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-marketing" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Personalisierte Werbung durch Zuordnung zu Nutzerkategorien
+                <div><strong>Facebook: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-profiling" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Personalisierte Werbung durch Zuordnung zu Nutzerkategorien
+                <div><strong>Facebook: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-disclosure" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Beide Unternehmen speichern Daten zur eigenen Verwendung
+                <div><strong>Google: </strong>n.a.<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>
+                  <div><strong>Facebook: </strong>n.a.<br>
+                    <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Google Analytics, Facebook
+            </div>
+            <div class="cell cell--child">
+            </div>
+          </div>
+        </div>
+        <!-- Verhalten -->
+        <div class="privacy-table__row-group">
+          <div class="privacy-table__row privacy-table__row--parent">
+            <div class="cell cell--data">
+              Verhalten
+              <img class="cell__toggle" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/plus.png" alt="plus">
+            </div>
+            <div class="cell cell--match cell--uses-service">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--match cell--uses-analytics">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--match cell cell--uses-marketing">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--match cell cell--uses-profiling">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--match cell cell--uses-disclosure">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--uses-publication">
+
+            </div>
+          </div>
+          <!-- besuchte Seiten -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              besuchte Seiten
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png"
+                title="Besuchte Seiten speichern unsere Server automatisch und Skripte (etwa von Google Analytics) messen diese über Tracking-Codes und ordnen diese über Cookies einem Nutzer zu." data-toggle="tooltip" data-placement="auto left"
+                alt="source">
+
+            </div>
+            <div class="cell cell--child cell--tracker" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Daten werden standardmäßig vom Server erhoben.
+                <div><strong>Google: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>
+                  <div><strong>Sarenza: </strong> 5 Jahre nach Ende der Kundenbeziehung auf europäischen Servern<br></div>">
+              Sarenza
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-analytics" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Analyse unserer Zielgruppen zur Verbesserung der Produkte.
+                <div><strong>Google: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>
+                  <div><strong>Sarenza: </strong> 5 Jahre nach Ende der Kundenbeziehung auf europäischen Servern<br></div>">
+              Sarenza, Google Analytics
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-marketing" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Personalisierte Werbung durch Zuordnung zu Nutzerkategorien
+                <div><strong>Facebook: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-profiling" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Personalisierte Werbung durch Zuordnung zu Nutzerkategorien
+                <div><strong>Facebook: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-disclosure" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Beide Unternehmen speichern Daten zur eigenen Verwendung
+                <div><strong>Google: </strong>n.a.<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>
+                  <div><strong>Facebook: </strong>n.a.<br>
+                    <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Google Analytics, Facebook
+            </div>
+            <div class="cell cell--child">
+            </div>
+          </div>
+          <!-- Aufenthaltsdauer -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              Aufenthalts-<br>dauer
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png"
+                title="Die Aufenthaltsdauer speichern unsere Server automatisch und Skripte (etwa von Google Analytics) messen diese über Tracking-Codes und ordnen diese über Cookies einem Nutzer zu." data-toggle="tooltip" data-placement="auto left"
+                alt="source">
+
+            </div>
+            <div class="cell cell--child cell--tracker" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Daten werden standardmäßig vom Server erhoben.
+                <div><strong>Google: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>
+                  <div><strong>Sarenza: </strong> 5 Jahre nach Ende der Kundenbeziehung auf europäischen Servern<br></div>">
+              Sarenza
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-analytics" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Analyse unserer Zielgruppen zur Verbesserung der Produkte.
+                <div><strong>Google: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>
+                  <div><strong>Sarenza: </strong> 5 Jahre nach Ende der Kundenbeziehung auf europäischen Servern<br></div>">
+              Sarenza, Google Analytics
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-marketing" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Personalisierte Werbung durch Zuordnung zu Nutzerkategorien
+                <div><strong>Facebook: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-profiling" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Personalisierte Werbung durch Zuordnung zu Nutzerkategorien
+                <div><strong>Facebook: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-disclosure" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Beide Unternehmen speichern Daten zur eigenen Verwendung
+                <div><strong>Google: </strong>n.a.<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>
+                  <div><strong>Facebook: </strong>n.a.<br>
+                    <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Google Analytics, Facebook
+            </div>
+            <div class="cell cell--child">
+            </div>
+          </div>
+          <!-- Interaktion mit Werbung -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              Interaktion mit Werbung
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png" title="Mit Tracking-Skripten und Cookies erfassen Anbieter, wie oft Ihre Werbung geklickt wird." data-toggle="tooltip"
+                data-placement="auto left" alt="source">
+
+            </div>
+            <div class="cell cell--child">
+
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-analytics" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Analyse, wie effektiv verschiedene Werbemaßnahmen sind.
+                <div><strong>Facebook: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>
+                  <div><strong>Sarenza: </strong> für ein Jahr<br></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-marketing" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Personalisierte Werbung durch Zuordnung zu Nutzerkategorien
+                <div><strong>Facebook: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-profiling" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Personalisierte Werbung durch Zuordnung zu Nutzerkategorien
+                <div><strong>Facebook: </strong> für ein Jahr<br>
+                  <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child cell--tracker cell--uses-disclosure" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Facebook speichern Daten zur eigenen Verwendung
+                  <div><strong>Facebook: </strong>n.a.<br>
+                    <label class='switch'><input type='checkbox' checked=''><span class='slider round'></span></label></div>">
+              Facebook
+            </div>
+            <div class="cell cell--child">
+            </div>
+          </div>
+        </div>
+        <!-- Formulareingaben -->
+        <div class="privacy-table__row-group">
+          <div class="privacy-table__row privacy-table__row--parent">
+            <div class="cell cell--data">
+              Formular-<br>eingaben
+              <img class="cell__toggle" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/plus.png" alt="plus">
+            </div>
+            <div class="cell cell--match cell--uses-service">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+            <div class="cell cell--uses-analytics">
+
+            </div>
+            <div class="cell cell cell--uses-marketing">
+            </div>
+            <div class="cell cell--uses-profiling">
+            </div>
+            <div class="cell cell--uses-disclosure">
+            </div>
+            <div class="cell cell--match cell--uses-publication">
+              <img class="cell--match__icon" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/true.png" alt="Ja">
+            </div>
+          </div>
+          <!-- Bewertung -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              Bewertung
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png" title="Sie können gekaufte Artikel online bewerten. Ihren Namen können Sie auf Wunsch hin verbergen." data-toggle="tooltip"
+                data-placement="auto left" alt="source">
+
+            </div>
+            <div class="cell cell--child cell--tracker" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Ihre Bewertungen müssen auf unserem Server gespeichert sein.
+                <div><strong>Sarenza: </strong>ohne Ablaufdatum (Ausnahme Löschung)<br></div>">
+              Sarenza
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child cell--tracker" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Bewertungen werden öffentlich angezeigt.
+                <div><strong>Sarenza: </strong>ohne Ablaufdatum (Ausnahme Löschung)<br></div>">
+              Sarenza
+            </div>
+          </div>
+          <!-- Kontaktformular -->
+          <div class="privacy-table__row privacy-table__row--child">
+            <div class="cell cell--data cell--child">
+              Kontakt-<br>formular
+              <img class="cell__source" src="http://www.umfrage.mcm.uni-wuerzburg.de/upload/surveys/424134/files/source.png" title="Wenn Sie Kontakt mit uns aufnehmen, speichern wir Kontaktinformationen und den Inhalt der Konversation."
+                data-toggle="tooltip" data-placement="auto left" alt="source">
+
+            </div>
+            <div class="cell cell--child cell--tracker" data-toggle="popover" data-html="true" data-placement="auto bottom" data-content="Wir speichern Konversationen, um guten Kundenservice zu gewährleisten.
+                <div><strong>Sarenza: </strong>ohne Ablaufdatum (Ausnahme Löschung)<br></div>">
+              Sarenza
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child">
+            </div>
+            <div class="cell cell--child">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="link-to-policy"><span class="pseudo-link">Hier</span> gelangen Sie zum vollständigen Text der Datenschutzerklärung.</p>
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+
+
+      $.get("https://api.jsonbin.io/b/5e2c32c93d75894195dea534/latest", function(data, textStatus, jqXHR) {
+
+        let before = data;
+        let after = before;
+        after.interactive = encodeURIComponent($("#json-content").html());
+        // after.text = "blub";
+        // delete after.new;
+        console.log("Local " + JSON.stringify(after));
+        let json = after;
+
+        $.ajax({
+          url: "https://api.jsonbin.io/b/5e2c32c93d75894195dea534",
+          type: "PUT",
+          // crossDomain: true,
+          data: JSON.stringify(json),
+          contentType: "application/json; charset=utf-8",
+          // dataType: "jsonp",
+          success: function(data, textStatus, jqXHR) {
+            console.log("success");
+            $.get("https://api.jsonbin.io/b/5e2c32c93d75894195dea534/latest", function(data, textStatus, jqXHR) {
+              console.log("Online " + JSON.stringify(data));
+            });
+          }
+        });
+
+      });
+
+      // let code = $("#json-content").html();
+      // var json = {
+      //   "interactive": encodeURI(code)
+      // };
+      // $.ajax({
+      //   url: "https://api.myjson.com/bins/yingi",
+      //   type: "PUT",
+      //   data: JSON.stringify(json),
+      //   contentType: "application/json; charset=utf-8",
+      //   // dataType: "json",
+      //   success: function(data, textStatus, jqXHR) {
+      //     console.log("Updated");
+      //     // $.get("https://api.myjson.com/bins/yingi", function(data, textStatus, jqXHR) {
+      //       // console.log("Online " + JSON.stringify(data));
+      //
+      //     // });
+      //   }
+      // });
+
+
+      // $.get("https://api.myjson.com/bins/yingi", function(data, textStatus, jqXHR) {
+      //
+      //   let code = $("#json-content").html();
+      //
+      //   let before = data;
+      //   let after = before;
+      //   after.interactive = encodeURI(code);
+      //   // delete after.new;
+      //   console.log("Local " + JSON.stringify(after));
+      //   let json = after;
+      //
+      //   $.ajax({
+      //     url: "https://api.myjson.com/bins/yingi",
+      //     type: "PUT",
+      //     data: JSON.stringify(json),
+      //     contentType: "application/json; charset=utf-8",
+      //     dataType: "json",
+      //     success: function(data, textStatus, jqXHR) {
+      //       $.get("https://api.myjson.com/bins/yingi", function(data, textStatus, jqXHR) {
+      //         console.log("Online " + JSON.stringify(data));
+      //       });
+      //     }
+      //   });
+      //
+      // });
+
+    });
+  </script>
+
+</body>
+
+</html>
